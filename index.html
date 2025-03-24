@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>MMAudio</title>
+    <title>DeepAudio-V1</title>
 
     <link rel="icon" type="image/png" href="images/icon.png">
 
@@ -38,38 +38,40 @@
             </div>
 			
             <br>
-			
             <br>
     
             <div class="h-100 row text-center justify-content-md-center" style="font-size:20px;">
                 <div class="col-sm-2">
-                    <a href="https://arxiv.org/abs/2412.15322">[Paper]</a>
+                    <a href="https://arxiv.org">[Paper]</a>
                 </div>
                 <div class="col-sm-2">
-                    <a href="https://github.com/hkchengrex/MMAudio">[Code]</a>
+                    <a href="https://github.com/acappemin/DeepAudio-V1">[Code]</a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="https://huggingface.co/spaces/hkchengrex/MMAudio">[Huggingface Demo]</a>
+                    <a href="https://huggingface.co/spaces/lshzhm/DeepAudio-V1">[Huggingface Demo]</a>
                 </div>
             </div>
 			
+			<br>
+            <br>
+			
+			<div class="row" style="font-size:32px">
+                <div class="col strong">
+                    Abstract
+                </div>
+            </div>
+			
+			<br>
+            <br>
 			
 			Currently, high-quality, synchronized audio is synthesized using various multi-modal joint learning frameworks, leveraging video and optional text inputs. In the video-to-audio benchmarks, video-to-audio quality, semantic alignment, and audio-visual synchronization are effectively achieved.However, in real-world scenarios, speech and audio often coexist in videos simultaneously, and the end-to-end generation of synchronous speech and audio given video and text conditions are not well studied. Therefore, we propose an end-to-end multi-modal generation framework that simultaneously produces speech and audio based on video and text conditions. Furthermore, the advantages of video-to-audio (V2A) models for generating speech from videos remain unclear. The proposed framework, DeepAudio, consists of a video-to-audio (V2A) module, a text-to-speech (TTS) module, and a dynamic mixture of modality fusion (MoF) module. In the evaluation, the proposed end-to-end framework achieves state-of-the-art performance on the video-audio benchmark, video-speech benchmark, and text-speech benchmark. In detail, our framework achieves comparable results in the comparison with state-of-the-art models for the video-audio and text-speech benchmarks, and surpassing state-of-the-art models in the video-speech benchmark, with WER 16.57% to 3.15% (+80.99%), SPK-SIM 78.30% to 89.38% (+14.15%), EMO-SIM 66.24% to 75.56% (+14.07%), MCD 8.59 to 7.98 (+7.10%), MCD_SL 11.05 to 9.40 (+14.93%) across a variety of dubbing settings.
 			
             <br>
-            <hr>
             <br>
 			
-            <div class="row">
-                <div class="col">
-                    <p class="light" style="text-align: left;">
-                        MMAudio generates synchronized audio given video and/or text inputs.
-                    </p>
-                </div>
-            </div>
-			
-            <br>
             <hr>
+            
+			<br>
             <br>
 			
             <div class="row" style="font-size:32px">
@@ -77,8 +79,23 @@
                     Demos
                 </div>
             </div>
-            <br>
 			
+            <br>
+			<br>
+			
+			
+			<!-- 第一行 -->
+			<div class="description">
+				<h3>视频 1</h3>
+				<p>这是视频 1 的描述内容。可以包括详细的介绍和说明。</p>
+			</div>
+			<div class="video">
+				<video controls>
+					<source src="https://acappemin.github.io/DeepAudio-V1/assets/00000001.gen.mp4" type="video/mp4">
+					您的浏览器不支持视频播放。
+				</video>
+			</div>
+
 
     
             <br><br>
