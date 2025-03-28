@@ -294,11 +294,191 @@
 				  <td>89.21</td>
 				</tr>
 			  </tbody>
+			  <thead>
+				<tr>
+				  <th rowspan="2">V2A Task</th>
+				  <th></th>
+				  <th colspan="6">VGGSound-Test</th>
+				</tr>
+				<tr>
+				  <th>Params</th>
+				  <th>FAD↓</th>
+				  <th>FD↓</th>
+				  <th>KL↓</th>
+				  <th>IS↑</th>
+				  <th>CLIP↑</th>
+				  <th>AV↑</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>Diff-Foley~<sup>4</sup></td>
+				  <td>859M</td>
+				  <td>6.05</td>
+				  <td>23.38</td>
+				  <td>3.18</td>
+				  <td>10.95</td>
+				  <td>9.40</td>
+				  <td>0.21</td>
+				</tr>
+				<tr>
+				  <td>FoleyCrafter w/o text~<sup>5</sup></td>
+				  <td>1.22B</td>
+				  <td>2.38</td>
+				  <td>26.70</td>
+				  <td>2.53</td>
+				  <td>9.66</td>
+				  <td>15.57</td>
+				  <td><strong>0.25</strong></td>
+				</tr>
+				<tr>
+				  <td>FoleyCrafter w. text~<sup>5</sup></td>
+				  <td>1.22B</td>
+				  <td>2.59</td>
+				  <td>20.88</td>
+				  <td>2.28</td>
+				  <td>13.60</td>
+				  <td>14.80</td>
+				  <td>0.24</td>
+				</tr>
+				<tr>
+				  <td>V2A-Mapper~<sup>6</sup></td>
+				  <td>229M</td>
+				  <td>0.82</td>
+				  <td>13.47</td>
+				  <td>2.67</td>
+				  <td>10.53</td>
+				  <td>15.33</td>
+				  <td>0.14</td>
+				</tr>
+				<tr>
+				  <td>Frieren~<sup>7</sup></td>
+				  <td>159M</td>
+				  <td>1.36</td>
+				  <td>12.48</td>
+				  <td>2.75</td>
+				  <td>12.34</td>
+				  <td>11.57</td>
+				  <td>0.21</td>
+				</tr>
+				<tr>
+				  <td>Ours-MM-S16K</td>
+				  <td>157M</td>
+				  <td>0.79</td>
+				  <td>5.22</td>
+				  <td><strong>1.65</strong></td>
+				  <td>14.44</td>
+				  <td>15.22</td>
+				  <td>0.21</td>
+				</tr>
+				<tr>
+				  <td>Ours-MM-S44K</td>
+				  <td>157M</td>
+				  <td>1.66</td>
+				  <td>5.55</td>
+				  <td>1.67</td>
+				  <td><strong>18.02</strong></td>
+				  <td>15.38</td>
+				  <td>0.21</td>
+				</tr>
+				<tr>
+				  <td>Ours-MM-M44K</td>
+				  <td>621M</td>
+				  <td>1.13</td>
+				  <td>4.74</td>
+				  <td>1.66</td>
+				  <td>17.41</td>
+				  <td>15.89</td>
+				  <td>0.22</td>
+				</tr>
+				<tr>
+				  <td>Ours-MM-L44K</td>
+				  <td>1.03B</td>
+				  <td>0.97</td>
+				  <td><strong>4.72</strong></td>
+				  <td><strong>1.65</strong></td>
+				  <td>17.40</td>
+				  <td>16.12</td>
+				  <td>0.22</td>
+				</tr>
+				<tr>
+				  <td>Ours-YS-24K</td>
+				  <td>718M</td>
+				  <td><strong>0.74</strong></td>
+				  <td>5.69</td>
+				  <td>1.69</td>
+				  <td>14.63</td>
+				  <td><strong>17.70</strong></td>
+				  <td>0.24</td>
+				</tr>
+			  </tbody>
+			  <thead>
+				<tr>
+				  <th rowspan="2">TTS Task</th>
+				  <th></th>
+				  <th colspan="2">LibriSpeech-PC test-clean</th>
+				</tr>
+				<tr>
+				  <th>Params</th>
+				  <th>SIM-O↑</th>
+				  <th>WER(%)↓</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>GT</td>
+				  <td></td>
+				  <td>0.665</td>
+				  <td>2.281</td>
+				</tr>
+				<tr>
+				  <td>F5-TTS~<sup>8</sup></td>
+				  <td>336M</td>
+				  <td>0.648</td>
+				  <td>2.432</td>
+				</tr>
+				<tr>
+				  <td>V2TTS~<sup>9</sup></td>
+				  <td>579M</td>
+				  <td>0.547</td>
+				  <td>3.129</td>
+				</tr>
+				<tr>
+				  <td>Ours-MM-S16K</td>
+				  <td>493M</td>
+				  <td>0.602</td>
+				  <td>2.646</td>
+				</tr>
+				<tr>
+				  <td>Ours-MM-S44K</td>
+				  <td>493M</td>
+				  <td>0.619</td>
+				  <td>2.587</td>
+				</tr>
+				<tr>
+				  <td>Ours-MM-M44K</td>
+				  <td>957M</td>
+				  <td>0.605</td>
+				  <td>2.626</td>
+				</tr>
+				<tr>
+				  <td>Ours-MM-L44K</td>
+				  <td>1.37B</td>
+				  <td>0.604</td>
+				  <td>2.621</td>
+				</tr>
+				<tr>
+				  <td>Ours-YS-24K</td>
+				  <td>1.05B</td>
+				  <td>0.611</td>
+				  <td>2.557</td>
+				</tr>
+			  </tbody>
 			</table>
 			
 			<br>
 			
-			Table 1: Comparison of different methods on V2S, V2A and TTS tasks. Ours-MM-* represents the V2A module is a reproduced MMAudio~\cite{cheng2024taming} series model with specific parameter size and audio sampling rate, while Our-YS-24K represents the V2A module is a reproduced YingSound~\cite{chen2024yingsound} model. The Params of the Ours-* model refers to the number of actually activated parameters, which depends on the specific task.
+			Table 1: Comparison of different methods on V2S, V2A and TTS tasks. Ours-MM-* represents the V2A module is a reproduced MMAudio series model with specific parameter size and audio sampling rate, while Our-YS-24K represents the V2A module is a reproduced YingSound model. The Params of the Ours-* model refers to the number of actually activated parameters, which depends on the specific task.
 			
 			<br>
 			<br>
